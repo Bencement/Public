@@ -17,9 +17,11 @@ attempt = 0
 mutat = []
 mutatrend = []
 for score_dict in score_list:
-    mutat = mutat.append(score_dict["attempts"])
+    mutat.append(score_dict["attempts"])
 
-mutatrend = mutat.sort()
+mutat.sort()
+mutatrend = mutat
+
 if score_list_items > 2:
     for i in mutatrend:
         poz = mutatrend[i]
